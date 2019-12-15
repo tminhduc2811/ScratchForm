@@ -30,6 +30,8 @@ namespace UIControl
             ConnectedImage.Visible = false;
             ConnectedLabel.Visible = false;
             string[] Ports = SerialPort.GetPortNames();
+            string[] Br = new string[] { "9600", "115200" };
+            BaudrateBox.Items.AddRange(Br);
             PortNameBox.Items.AddRange(Ports);
             BaudrateBox.Text = "115200";
             CloseSPBt.Enabled = false;
@@ -289,6 +291,83 @@ namespace UIControl
             try
             {
                 serialPort1.Write("410");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        // Instruction for pressing keyboard, Q W E R for the left directions of servos
+        // A, W, E, R for the right directions of servos
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                switch (e.KeyCode.ToString())
+                {
+                    case "Q":
+                        serialPort1.Write("110");
+                        break;
+                    case "W":
+                        serialPort1.Write("210");
+                        break;
+                    case "E":
+                        serialPort1.Write("310");
+                        break;
+                    case "R":
+                        serialPort1.Write("410");
+                        break;
+                    case "A":
+                        serialPort1.Write("111");
+                        break;
+                    case "S":
+                        serialPort1.Write("211");
+                        break;
+                    case "D":
+                        serialPort1.Write("311");
+                        break;
+                    case "F":
+                        serialPort1.Write("411");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                switch (e.KeyCode.ToString())
+                {
+                    case "Q":
+                        serialPort1.Write("100");
+                        break;
+                    case "W":
+                        serialPort1.Write("200");
+                        break;
+                    case "E":
+                        serialPort1.Write("300");
+                        break;
+                    case "R":
+                        serialPort1.Write("400");
+                        break;
+                    case "A":
+                        serialPort1.Write("101");
+                        break;
+                    case "S":
+                        serialPort1.Write("201");
+                        break;
+                    case "D":
+                        serialPort1.Write("301");
+                        break;
+                    case "F":
+                        serialPort1.Write("401");
+                        break;
+                }
             }
             catch (Exception ex)
             {
