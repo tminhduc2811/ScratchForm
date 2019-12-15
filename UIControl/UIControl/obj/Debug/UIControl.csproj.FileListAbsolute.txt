@@ -1,0 +1,12 @@
+D:\Project\UIControl\UIControl\UIControl\bin\Debug\UIControl.exe.config
+D:\Project\UIControl\UIControl\UIControl\bin\Debug\UIControl.exe
+D:\Project\UIControl\UIControl\UIControl\bin\Debug\UIControl.pdb
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.csprojAssemblyReference.cache
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.Form1.resources
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.Properties.Resources.resources
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.csproj.GenerateResource.cache
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.csproj.CoreCompileInputs.cache
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.exe
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.pdb
+D:\Project\UIControl\UIControl\UIControl\bin\Debug\Bunifu_UI_v1.52.dll
+D:\Project\UIControl\UIControl\UIControl\obj\Debug\UIControl.csproj.CopyComplete
